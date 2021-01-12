@@ -112,6 +112,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WinInicio";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.WinInicio_Load);
             this.PNLTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BTNMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTNClose)).EndInit();

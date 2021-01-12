@@ -49,10 +49,6 @@
       <Project>{c4558728-b040-408e-9cae-d08a5f235e7e}</Project>
       <Name>Auxiliar</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Unidad de control\Unidad de control.csproj">
-      <Project>{adf38a7d-9b11-452f-ae70-9ea317cd1f4a}</Project>
-      <Name>Unidad de control</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

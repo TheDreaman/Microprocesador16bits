@@ -44,5 +44,18 @@
     <Compile Include="UControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ALU\ALU.csproj">
+      <Project>{f19cbaa6-157f-41e3-8214-d5c6666f7fc1}</Project>
+      <Name>ALU</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Auxiliar\Auxiliar.csproj">
+      <Project>{c4558728-b040-408e-9cae-d08a5f235e7e}</Project>
+      <Name>Auxiliar</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using Auxiliar;
 
 namespace Ventana
 {
@@ -49,7 +50,7 @@ namespace Ventana
 
         private void BTNCargar_Click(object sender, EventArgs e)
         {
-            Stream fs = new FileStream("./Ejemplo.txt", FileMode.Open, FileAccess.Read);
+            Stream fs = new FileStream("Ejemplo.txt", FileMode.Open, FileAccess.Read);
             int y = 1;
             int tres = 1;
             int tres2 = 1;
@@ -115,6 +116,10 @@ namespace Ventana
                     string alto = ("Alto : " + Alto[1] + Alto[2] + Alto[3] + Alto[4] + Environment.NewLine);
                     TXBMostrar.Text += ("" + ins + borw + toreg + fromreg + whatreg + bajo + alto);
                     y = 0;
+                    Auxiliar.Auxiliar.T1 = Instruction[1];
+                    Auxiliar.Auxiliar.T2 = Instruction[2];
+                    Auxiliar.Auxiliar.T3 = Instruction[3];
+                    Auxiliar.Auxiliar.T4 = Instruction[4];
                 }
                 //string cadena = ($"Posición {x+1}: " + valUTF + Instruction[1] + Instruction[2] + Instruction[3] + Instruction[4] + Environment.NewLine);
                 //TXBMostrar.Text += cadena;
@@ -122,6 +127,11 @@ namespace Ventana
             }
             fs.Close();
             
+        }
+
+        private void WinInicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

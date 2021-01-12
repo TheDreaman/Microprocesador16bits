@@ -42,5 +42,20 @@ namespace Auxiliar
         public static int RC6 { get; set; }
         public static int RR7 { get; set; }
         public static int RC7 { get; set; }
+        //instrucciones
+        public static int T4 { get; set; }
+        public static int T3 { get; set; }
+        public static int T2 { get; set; }
+        public static int T1 { get; set; }
+        //partes del registro
+        public static int B1 { get; set; }
+        public static int B2 { get; set; }
+        public static int B3 { get; set; }
+        public static int B4 { get; set; }
+        public static int A1 { get; set; }
+        public static int A2 { get; set; }
+        public static int A3 { get; set; }
+        public static int A4 { get; set; }
+
     }
 }

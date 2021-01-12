@@ -8,7 +8,7 @@ using Auxiliar;
 
 namespace ALU
 {
-    class ALU16bits
+    public class ALU16bits
     {
         //Auxiliar aux = new Auxiliar;
         public void Suma(int a7, int a6, int a5, int a4, int a3, int a2, int a1, int a0, int b7, int b6, int b5, int b4, int b3, int b2, int b1, int b0) //Sumador completo 8bits
