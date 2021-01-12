@@ -11,56 +11,60 @@ namespace ALU
     public class ALU16bits
     {
         //Auxiliar aux = new Auxiliar;
-        public void Suma(int a7, int a6, int a5, int a4, int a3, int a2, int a1, int a0, int b7, int b6, int b5, int b4, int b3, int b2, int b1, int b0) //Sumador completo 8bits
+        public void Suma(int a7, int a6, int a5, int a4, int a3, int a2, int a1, int a0, int b7, int b6, int b5, int b4, int b3, int b2, int b1, int b0, int SR7, int SR6, int SR5, int SR4, int SR3, int SR2, int SR1, int SR0) //Sumador completo 8bits
         {
             int x = XOR(a0, b0);
             int y = AND(a0, b0);
             int Cin = 0;
             int y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR0 = XOR(x, Cin);  //Resultado 0
-            Auxiliar.Auxiliar.SC0 = OR(y, y2);  //Acarreo 0
+            SR0 = XOR(x, Cin);  //Resultado 0
+            int SC0 = OR(y, y2);  //Acarreo 0
             x = XOR(a1, b1);
             y = AND(a1, b1);
-            Cin = Auxiliar.Auxiliar.SC0;
+            Cin = SC0;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR1 = XOR(x, Cin);  //Resultado 1
-            Auxiliar.Auxiliar.SC1 = OR(y, y2);  //Acarreo 1
+            SR1 = XOR(x, Cin);  //Resultado 1
+            int SC1 = OR(y, y2);  //Acarreo 1
             x = XOR(a2, b2);
             y = AND(a2, b2);
-            Cin = Auxiliar.Auxiliar.SC1;
+            Cin = SC1;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR2 = XOR(x, Cin);  //Resultado 2
-            Auxiliar.Auxiliar.SC2 = OR(y, y2);  //Acarreo 2
+            SR2 = XOR(x, Cin);  //Resultado 2
+            int SC2 = OR(y, y2);  //Acarreo 2
             x = XOR(a3, b3);
             y = AND(a3, b3);
-            Cin = Auxiliar.Auxiliar.SC2;
+            Cin = SC2;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR3 = XOR(x, Cin);  //Resultado 3
-            Auxiliar.Auxiliar.SC3 = OR(y, y2);  //Acarreo 3
+            SR3 = XOR(x, Cin);  //Resultado 3
+            int SC3 = OR(y, y2);  //Acarreo 3
             x = XOR(a4, b4);
             y = AND(a4, b4);
-            Cin = Auxiliar.Auxiliar.SC3;
+            Cin = SC3;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR4 = XOR(x, Cin);  //Resultado 4
-            Auxiliar.Auxiliar.SC4 = OR(y, y2);  //Acarreo 4
+            SR4 = XOR(x, Cin);  //Resultado 4
+            int SC4 = OR(y, y2);  //Acarreo 4
             x = XOR(a5, b5);
             y = AND(a5, b5);
-            Cin = Auxiliar.Auxiliar.SC4;
+            Cin = SC4;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR5 = XOR(x, Cin);  //Resultado 5
-            Auxiliar.Auxiliar.SC5 = OR(y, y2);  //Acarreo 5
+            SR5 = XOR(x, Cin);  //Resultado 5
+            int SC5 = OR(y, y2);  //Acarreo 5
             x = XOR(a6, b6);
             y = AND(a6, b6);
-            Cin = Auxiliar.Auxiliar.SC5;
+            Cin = SC5;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR6 = XOR(x, Cin);  //Resultado 6
-            Auxiliar.Auxiliar.SC6 = OR(y, y2);  //Acarreo 6
+            SR6 = XOR(x, Cin);  //Resultado 6
+            int SC6 = OR(y, y2);  //Acarreo 6
             x = XOR(a7, b7);
             y = AND(a7, b7);
-            Cin = Auxiliar.Auxiliar.SC6;
+            Cin = SC6;
             y2 = AND(x, Cin);
-            Auxiliar.Auxiliar.SR7 = XOR(x, Cin);  //Resultado 7
-            Auxiliar.Auxiliar.SC7 = OR(y, y2);  //Acarreo 7
+            SR7 = XOR(x, Cin);  //Resultado 7
+            int SC7 = OR(y, y2);  //Acarreo 7
+            if(SC7==1)
+            {
+                Auxiliar.Auxiliar.CY = 1;
+            }
         }
 
         public void Resta(int a7, int a6, int a5, int a4, int a3, int a2, int a1, int a0, int b7, int b6, int b5, int b4, int b3, int b2, int b1, int b0) //Sumador completo 8bits

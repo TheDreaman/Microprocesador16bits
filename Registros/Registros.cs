@@ -8,5 +8,21 @@ namespace Registros
 {
     public class Registros
     {
+        public void AX()
+        {
+
+        }
+        public void BX()
+        {
+
+        }
+        public void CX()
+        {
+
+        }
+        public void DX()
+        {
+
+        }
     }
 }

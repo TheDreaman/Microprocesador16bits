@@ -42,11 +42,25 @@ namespace Auxiliar
         public static int RC6 { get; set; }
         public static int RR7 { get; set; }
         public static int RC7 { get; set; }
+        //REgistros
+        public static int[] AX = new int[9];
+        public static int[] BX = new int[9];
+        public static int[] CX = new int[9];
+        public static int[] DX = new int[9];
+        //IP
+        public static int IP { get; set; }
+        public static int IP2 { get; set; }
+        //Banderas
+        public static int Z { get; set; }
+        public static int OF { get; set; }
+        public static int CY { get; set; }
         //instrucciones
         public static int T4 { get; set; }
         public static int T3 { get; set; }
         public static int T2 { get; set; }
         public static int T1 { get; set; }
+        //URL del txt
+        public static string URLtxt { get; set; }
         //partes del registro
         public static int B1 { get; set; }
         public static int B2 { get; set; }
