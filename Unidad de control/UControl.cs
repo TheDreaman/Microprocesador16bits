@@ -448,50 +448,50 @@ namespace Unidad_de_control
             if (regdest2 == "AX")
             {
                 ALU.Resta(alto1, alto2, alto3, alto4, alto5, alto6, alto7, alto8, bajo1, bajo2, bajo3, bajo4, bajo5, bajo6, bajo7, bajo8);
-                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if (regdest2 == "BX")
             {
                 ALU.Resta(alto1, alto2, alto3, alto4, alto5, alto6, alto7, alto8, bajo1, bajo2, bajo3, bajo4, bajo5, bajo6, bajo7, bajo8);
-                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if (regdest2 == "CX")
             {
                 ALU.Resta(alto1, alto2, alto3, alto4, alto5, alto6, alto7, alto8, bajo1, bajo2, bajo3, bajo4, bajo5, bajo6, bajo7, bajo8);
-                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if (regdest2 == "DX")
             {
                 ALU.Resta(alto1, alto2, alto3, alto4, alto5, alto6, alto7, alto8, bajo1, bajo2, bajo3, bajo4, bajo5, bajo6, bajo7, bajo8);
-                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.RR7;
             }
         }
 
@@ -525,185 +525,185 @@ namespace Unidad_de_control
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8], //Registro a
-                   Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]); //Registro b
-                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8], //Registro b 
+                   Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8]);//Registro a 
+                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8], //Registro a
-                   Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]); //Registro b
-                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8] ,//Registro b 
+                   Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8]);//Registro a 
+                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8],
-                    Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8]);
-                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8],
+                    Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
+                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
                 ALU.Resta(Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8],
                     Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
-                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8],
-                   Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]); //Registro b
-                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8], //Registro b
+                   Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
+                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8],
-                   Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]); //Registro b
-                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8], //Registro b
+                   Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
+                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8],
-                    Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8]); //Registro b
-                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8], //Registro b
+                    Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]);
+                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8],
-                    Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
-                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8],
+                    Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]);
+                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
                 ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8],
                     Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]); //Registro b
-                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8],
-                    Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]); //Registro b
-                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8], //Registro b
+                    Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]);
+                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8],
-                    Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8]); //Registro b
-                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.AX[1], Auxiliar.Auxiliar.AX[2], Auxiliar.Auxiliar.AX[3], Auxiliar.Auxiliar.AX[4], Auxiliar.Auxiliar.AX[5], Auxiliar.Auxiliar.AX[6], Auxiliar.Auxiliar.AX[7], Auxiliar.Auxiliar.AX[8], //Registro b
+                    Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]);
+                Auxiliar.Auxiliar.AX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.AX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.AX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.AX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.AX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.AX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.AX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.AX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8],
-                    Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
-                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8],
+                    Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]);
+                Auxiliar.Auxiliar.BX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.BX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.BX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.BX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.BX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.BX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.BX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.BX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
-                ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8],
-                    Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8]); //Registro b
-                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.SR7;
+                ALU.Resta(Auxiliar.Auxiliar.CX[1], Auxiliar.Auxiliar.CX[2], Auxiliar.Auxiliar.CX[3], Auxiliar.Auxiliar.CX[4], Auxiliar.Auxiliar.CX[5], Auxiliar.Auxiliar.CX[6], Auxiliar.Auxiliar.CX[7], Auxiliar.Auxiliar.CX[8], //Registro b
+                    Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]);
+                Auxiliar.Auxiliar.CX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.CX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.CX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.CX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.CX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.CX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.CX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.CX[1] = Auxiliar.Auxiliar.RR7;
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
                 ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8],
                     Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8]); //Registro b
-                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.SR0;
-                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.SR1;
-                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.SR2;
-                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.SR3;
-                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.SR4;
-                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.SR5;
-                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.SR6;
-                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.SR7;
+                Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.RR0;
+                Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.RR1;
+                Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.RR2;
+                Auxiliar.Auxiliar.DX[5] = Auxiliar.Auxiliar.RR3;
+                Auxiliar.Auxiliar.DX[4] = Auxiliar.Auxiliar.RR4;
+                Auxiliar.Auxiliar.DX[3] = Auxiliar.Auxiliar.RR5;
+                Auxiliar.Auxiliar.DX[2] = Auxiliar.Auxiliar.RR6;
+                Auxiliar.Auxiliar.DX[1] = Auxiliar.Auxiliar.RR7;
             }
         }
     }
