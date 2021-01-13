@@ -150,7 +150,7 @@
             this.TXBAx.Name = "TXBAx";
             this.TXBAx.ReadOnly = true;
             this.TXBAx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBAx.Size = new System.Drawing.Size(49, 20);
+            this.TXBAx.Size = new System.Drawing.Size(69, 20);
             this.TXBAx.TabIndex = 5;
             // 
             // TXBBx
@@ -159,7 +159,7 @@
             this.TXBBx.Name = "TXBBx";
             this.TXBBx.ReadOnly = true;
             this.TXBBx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBBx.Size = new System.Drawing.Size(49, 20);
+            this.TXBBx.Size = new System.Drawing.Size(69, 20);
             this.TXBBx.TabIndex = 6;
             // 
             // TXBCx
@@ -168,7 +168,7 @@
             this.TXBCx.Name = "TXBCx";
             this.TXBCx.ReadOnly = true;
             this.TXBCx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBCx.Size = new System.Drawing.Size(49, 20);
+            this.TXBCx.Size = new System.Drawing.Size(69, 20);
             this.TXBCx.TabIndex = 7;
             // 
             // TXBDx
@@ -177,7 +177,7 @@
             this.TXBDx.Name = "TXBDx";
             this.TXBDx.ReadOnly = true;
             this.TXBDx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBDx.Size = new System.Drawing.Size(49, 20);
+            this.TXBDx.Size = new System.Drawing.Size(69, 20);
             this.TXBDx.TabIndex = 8;
             // 
             // TXBIP
@@ -186,7 +186,7 @@
             this.TXBIP.Name = "TXBIP";
             this.TXBIP.ReadOnly = true;
             this.TXBIP.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBIP.Size = new System.Drawing.Size(49, 20);
+            this.TXBIP.Size = new System.Drawing.Size(69, 20);
             this.TXBIP.TabIndex = 9;
             // 
             // TXBZero
@@ -195,7 +195,7 @@
             this.TXBZero.Name = "TXBZero";
             this.TXBZero.ReadOnly = true;
             this.TXBZero.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBZero.Size = new System.Drawing.Size(49, 20);
+            this.TXBZero.Size = new System.Drawing.Size(69, 20);
             this.TXBZero.TabIndex = 10;
             // 
             // TXBCarry
@@ -204,7 +204,7 @@
             this.TXBCarry.Name = "TXBCarry";
             this.TXBCarry.ReadOnly = true;
             this.TXBCarry.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBCarry.Size = new System.Drawing.Size(49, 20);
+            this.TXBCarry.Size = new System.Drawing.Size(69, 20);
             this.TXBCarry.TabIndex = 11;
             // 
             // TXBOnlyFans
@@ -213,7 +213,7 @@
             this.TXBOnlyFans.Name = "TXBOnlyFans";
             this.TXBOnlyFans.ReadOnly = true;
             this.TXBOnlyFans.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBOnlyFans.Size = new System.Drawing.Size(49, 20);
+            this.TXBOnlyFans.Size = new System.Drawing.Size(69, 20);
             this.TXBOnlyFans.TabIndex = 12;
             // 
             // LBLAx
