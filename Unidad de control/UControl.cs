@@ -591,7 +591,7 @@ namespace Unidad_de_control
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
                 ALU.Resta(Auxiliar.Auxiliar.DX[1], Auxiliar.Auxiliar.DX[2], Auxiliar.Auxiliar.DX[3], Auxiliar.Auxiliar.DX[4], Auxiliar.Auxiliar.DX[5], Auxiliar.Auxiliar.DX[6], Auxiliar.Auxiliar.DX[7], Auxiliar.Auxiliar.DX[8], //Registro b
-                   Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]);
+                   Auxiliar.Auxiliar.BX[1], Auxiliar.Auxiliar.BX[2], Auxiliar.Auxiliar.BX[3], Auxiliar.Auxiliar.BX[4], Auxiliar.Auxiliar.BX[5], Auxiliar.Auxiliar.BX[6], Auxiliar.Auxiliar.BX[7], Auxiliar.Auxiliar.BX[8]); //Registro a
                 Auxiliar.Auxiliar.DX[8] = Auxiliar.Auxiliar.RR0;
                 Auxiliar.Auxiliar.DX[7] = Auxiliar.Auxiliar.RR1;
                 Auxiliar.Auxiliar.DX[6] = Auxiliar.Auxiliar.RR2;
