@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Auxiliar
 {
-    public static class Auxiliar
+    public static class Auxi
     {
         //VARIABLES SUMA
         public static int SR0 { get; set; }

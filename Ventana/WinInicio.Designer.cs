@@ -53,6 +53,14 @@
             this.LBLZero = new System.Windows.Forms.Label();
             this.LBLCarry = new System.Windows.Forms.Label();
             this.LBLOnlyFans = new System.Windows.Forms.Label();
+            this.TXBMBR = new System.Windows.Forms.TextBox();
+            this.TXBMAR = new System.Windows.Forms.TextBox();
+            this.LBLMAR = new System.Windows.Forms.Label();
+            this.LBLMBR = new System.Windows.Forms.Label();
+            this.LBLPC = new System.Windows.Forms.Label();
+            this.LBLIR = new System.Windows.Forms.Label();
+            this.TXBPC = new System.Windows.Forms.TextBox();
+            this.TXBIR = new System.Windows.Forms.TextBox();
             this.PNLTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTNClose)).BeginInit();
@@ -98,12 +106,12 @@
             // 
             // TXBMostrar
             // 
-            this.TXBMostrar.Location = new System.Drawing.Point(148, 42);
+            this.TXBMostrar.Location = new System.Drawing.Point(193, 42);
             this.TXBMostrar.Multiline = true;
             this.TXBMostrar.Name = "TXBMostrar";
             this.TXBMostrar.ReadOnly = true;
             this.TXBMostrar.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBMostrar.Size = new System.Drawing.Size(640, 396);
+            this.TXBMostrar.Size = new System.Drawing.Size(595, 396);
             this.TXBMostrar.TabIndex = 1;
             // 
             // BTNCargar
@@ -124,7 +132,7 @@
             // 
             this.IMGSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IMGSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("IMGSiguiente.Image")));
-            this.IMGSiguiente.Location = new System.Drawing.Point(87, 85);
+            this.IMGSiguiente.Location = new System.Drawing.Point(87, 71);
             this.IMGSiguiente.Name = "IMGSiguiente";
             this.IMGSiguiente.Size = new System.Drawing.Size(40, 40);
             this.IMGSiguiente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,7 +144,7 @@
             // 
             this.IMGPlay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IMGPlay.Image = ((System.Drawing.Image)(resources.GetObject("IMGPlay.Image")));
-            this.IMGPlay.Location = new System.Drawing.Point(24, 85);
+            this.IMGPlay.Location = new System.Drawing.Point(21, 71);
             this.IMGPlay.Name = "IMGPlay";
             this.IMGPlay.Size = new System.Drawing.Size(40, 40);
             this.IMGPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -146,7 +154,7 @@
             // 
             // TXBAx
             // 
-            this.TXBAx.Location = new System.Drawing.Point(58, 156);
+            this.TXBAx.Location = new System.Drawing.Point(87, 133);
             this.TXBAx.Name = "TXBAx";
             this.TXBAx.ReadOnly = true;
             this.TXBAx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -155,7 +163,7 @@
             // 
             // TXBBx
             // 
-            this.TXBBx.Location = new System.Drawing.Point(58, 182);
+            this.TXBBx.Location = new System.Drawing.Point(87, 159);
             this.TXBBx.Name = "TXBBx";
             this.TXBBx.ReadOnly = true;
             this.TXBBx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -164,7 +172,7 @@
             // 
             // TXBCx
             // 
-            this.TXBCx.Location = new System.Drawing.Point(58, 208);
+            this.TXBCx.Location = new System.Drawing.Point(87, 185);
             this.TXBCx.Name = "TXBCx";
             this.TXBCx.ReadOnly = true;
             this.TXBCx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -173,7 +181,7 @@
             // 
             // TXBDx
             // 
-            this.TXBDx.Location = new System.Drawing.Point(58, 234);
+            this.TXBDx.Location = new System.Drawing.Point(87, 211);
             this.TXBDx.Name = "TXBDx";
             this.TXBDx.ReadOnly = true;
             this.TXBDx.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -182,7 +190,7 @@
             // 
             // TXBIP
             // 
-            this.TXBIP.Location = new System.Drawing.Point(58, 260);
+            this.TXBIP.Location = new System.Drawing.Point(87, 237);
             this.TXBIP.Name = "TXBIP";
             this.TXBIP.ReadOnly = true;
             this.TXBIP.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -191,7 +199,7 @@
             // 
             // TXBZero
             // 
-            this.TXBZero.Location = new System.Drawing.Point(58, 286);
+            this.TXBZero.Location = new System.Drawing.Point(87, 263);
             this.TXBZero.Name = "TXBZero";
             this.TXBZero.ReadOnly = true;
             this.TXBZero.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -200,7 +208,7 @@
             // 
             // TXBCarry
             // 
-            this.TXBCarry.Location = new System.Drawing.Point(58, 312);
+            this.TXBCarry.Location = new System.Drawing.Point(87, 289);
             this.TXBCarry.Name = "TXBCarry";
             this.TXBCarry.ReadOnly = true;
             this.TXBCarry.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -209,7 +217,7 @@
             // 
             // TXBOnlyFans
             // 
-            this.TXBOnlyFans.Location = new System.Drawing.Point(58, 338);
+            this.TXBOnlyFans.Location = new System.Drawing.Point(87, 315);
             this.TXBOnlyFans.Name = "TXBOnlyFans";
             this.TXBOnlyFans.ReadOnly = true;
             this.TXBOnlyFans.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -220,7 +228,7 @@
             // 
             this.LBLAx.AutoSize = true;
             this.LBLAx.ForeColor = System.Drawing.Color.White;
-            this.LBLAx.Location = new System.Drawing.Point(28, 159);
+            this.LBLAx.Location = new System.Drawing.Point(57, 136);
             this.LBLAx.Name = "LBLAx";
             this.LBLAx.Size = new System.Drawing.Size(24, 13);
             this.LBLAx.TabIndex = 13;
@@ -230,7 +238,7 @@
             // 
             this.LBLBx.AutoSize = true;
             this.LBLBx.ForeColor = System.Drawing.Color.White;
-            this.LBLBx.Location = new System.Drawing.Point(28, 185);
+            this.LBLBx.Location = new System.Drawing.Point(57, 162);
             this.LBLBx.Name = "LBLBx";
             this.LBLBx.Size = new System.Drawing.Size(24, 13);
             this.LBLBx.TabIndex = 14;
@@ -240,7 +248,7 @@
             // 
             this.LBLCx.AutoSize = true;
             this.LBLCx.ForeColor = System.Drawing.Color.White;
-            this.LBLCx.Location = new System.Drawing.Point(28, 211);
+            this.LBLCx.Location = new System.Drawing.Point(57, 188);
             this.LBLCx.Name = "LBLCx";
             this.LBLCx.Size = new System.Drawing.Size(24, 13);
             this.LBLCx.TabIndex = 15;
@@ -250,7 +258,7 @@
             // 
             this.LBLDx.AutoSize = true;
             this.LBLDx.ForeColor = System.Drawing.Color.White;
-            this.LBLDx.Location = new System.Drawing.Point(28, 237);
+            this.LBLDx.Location = new System.Drawing.Point(57, 214);
             this.LBLDx.Name = "LBLDx";
             this.LBLDx.Size = new System.Drawing.Size(25, 13);
             this.LBLDx.TabIndex = 16;
@@ -260,7 +268,7 @@
             // 
             this.LBLIP.AutoSize = true;
             this.LBLIP.ForeColor = System.Drawing.Color.White;
-            this.LBLIP.Location = new System.Drawing.Point(28, 263);
+            this.LBLIP.Location = new System.Drawing.Point(57, 240);
             this.LBLIP.Name = "LBLIP";
             this.LBLIP.Size = new System.Drawing.Size(20, 13);
             this.LBLIP.TabIndex = 17;
@@ -270,7 +278,7 @@
             // 
             this.LBLZero.AutoSize = true;
             this.LBLZero.ForeColor = System.Drawing.Color.White;
-            this.LBLZero.Location = new System.Drawing.Point(28, 289);
+            this.LBLZero.Location = new System.Drawing.Point(57, 266);
             this.LBLZero.Name = "LBLZero";
             this.LBLZero.Size = new System.Drawing.Size(17, 13);
             this.LBLZero.TabIndex = 18;
@@ -280,7 +288,7 @@
             // 
             this.LBLCarry.AutoSize = true;
             this.LBLCarry.ForeColor = System.Drawing.Color.White;
-            this.LBLCarry.Location = new System.Drawing.Point(28, 315);
+            this.LBLCarry.Location = new System.Drawing.Point(57, 292);
             this.LBLCarry.Name = "LBLCarry";
             this.LBLCarry.Size = new System.Drawing.Size(24, 13);
             this.LBLCarry.TabIndex = 19;
@@ -290,11 +298,87 @@
             // 
             this.LBLOnlyFans.AutoSize = true;
             this.LBLOnlyFans.ForeColor = System.Drawing.Color.White;
-            this.LBLOnlyFans.Location = new System.Drawing.Point(28, 341);
+            this.LBLOnlyFans.Location = new System.Drawing.Point(57, 318);
             this.LBLOnlyFans.Name = "LBLOnlyFans";
             this.LBLOnlyFans.Size = new System.Drawing.Size(24, 13);
             this.LBLOnlyFans.TabIndex = 20;
             this.LBLOnlyFans.Text = "OF:";
+            // 
+            // TXBMBR
+            // 
+            this.TXBMBR.Location = new System.Drawing.Point(58, 365);
+            this.TXBMBR.Name = "TXBMBR";
+            this.TXBMBR.ReadOnly = true;
+            this.TXBMBR.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TXBMBR.Size = new System.Drawing.Size(129, 20);
+            this.TXBMBR.TabIndex = 22;
+            // 
+            // TXBMAR
+            // 
+            this.TXBMAR.Location = new System.Drawing.Point(58, 339);
+            this.TXBMAR.Name = "TXBMAR";
+            this.TXBMAR.ReadOnly = true;
+            this.TXBMAR.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TXBMAR.Size = new System.Drawing.Size(129, 20);
+            this.TXBMAR.TabIndex = 21;
+            // 
+            // LBLMAR
+            // 
+            this.LBLMAR.AutoSize = true;
+            this.LBLMAR.ForeColor = System.Drawing.Color.White;
+            this.LBLMAR.Location = new System.Drawing.Point(9, 342);
+            this.LBLMAR.Name = "LBLMAR";
+            this.LBLMAR.Size = new System.Drawing.Size(34, 13);
+            this.LBLMAR.TabIndex = 23;
+            this.LBLMAR.Text = "MAR:";
+            // 
+            // LBLMBR
+            // 
+            this.LBLMBR.AutoSize = true;
+            this.LBLMBR.ForeColor = System.Drawing.Color.White;
+            this.LBLMBR.Location = new System.Drawing.Point(18, 368);
+            this.LBLMBR.Name = "LBLMBR";
+            this.LBLMBR.Size = new System.Drawing.Size(34, 13);
+            this.LBLMBR.TabIndex = 24;
+            this.LBLMBR.Text = "MBR:";
+            // 
+            // LBLPC
+            // 
+            this.LBLPC.AutoSize = true;
+            this.LBLPC.ForeColor = System.Drawing.Color.White;
+            this.LBLPC.Location = new System.Drawing.Point(24, 394);
+            this.LBLPC.Name = "LBLPC";
+            this.LBLPC.Size = new System.Drawing.Size(24, 13);
+            this.LBLPC.TabIndex = 25;
+            this.LBLPC.Text = "PC:";
+            // 
+            // LBLIR
+            // 
+            this.LBLIR.AutoSize = true;
+            this.LBLIR.ForeColor = System.Drawing.Color.White;
+            this.LBLIR.Location = new System.Drawing.Point(27, 420);
+            this.LBLIR.Name = "LBLIR";
+            this.LBLIR.Size = new System.Drawing.Size(21, 13);
+            this.LBLIR.TabIndex = 26;
+            this.LBLIR.Text = "IR:";
+            // 
+            // TXBPC
+            // 
+            this.TXBPC.Location = new System.Drawing.Point(58, 391);
+            this.TXBPC.Name = "TXBPC";
+            this.TXBPC.ReadOnly = true;
+            this.TXBPC.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TXBPC.Size = new System.Drawing.Size(129, 20);
+            this.TXBPC.TabIndex = 27;
+            // 
+            // TXBIR
+            // 
+            this.TXBIR.Location = new System.Drawing.Point(58, 417);
+            this.TXBIR.Name = "TXBIR";
+            this.TXBIR.ReadOnly = true;
+            this.TXBIR.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TXBIR.Size = new System.Drawing.Size(129, 20);
+            this.TXBIR.TabIndex = 28;
             // 
             // WinInicio
             // 
@@ -302,6 +386,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(23)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TXBIR);
+            this.Controls.Add(this.TXBPC);
+            this.Controls.Add(this.LBLIR);
+            this.Controls.Add(this.LBLPC);
+            this.Controls.Add(this.LBLMBR);
+            this.Controls.Add(this.LBLMAR);
+            this.Controls.Add(this.TXBMBR);
+            this.Controls.Add(this.TXBMAR);
             this.Controls.Add(this.LBLOnlyFans);
             this.Controls.Add(this.LBLCarry);
             this.Controls.Add(this.LBLZero);
@@ -363,6 +455,14 @@
         private System.Windows.Forms.Label LBLZero;
         private System.Windows.Forms.Label LBLCarry;
         private System.Windows.Forms.Label LBLOnlyFans;
+        private System.Windows.Forms.TextBox TXBMBR;
+        private System.Windows.Forms.TextBox TXBMAR;
+        private System.Windows.Forms.Label LBLMAR;
+        private System.Windows.Forms.Label LBLMBR;
+        private System.Windows.Forms.Label LBLPC;
+        private System.Windows.Forms.Label LBLIR;
+        private System.Windows.Forms.TextBox TXBPC;
+        private System.Windows.Forms.TextBox TXBIR;
     }
 }
 

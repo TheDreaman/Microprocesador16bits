@@ -62,7 +62,7 @@ namespace Ventana
             openFileDialog1.RestoreDirectory = true;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                Auxiliar.Auxiliar.URLtxt = openFileDialog1.FileName;
+                Auxiliar.Auxi.URLtxt = openFileDialog1.FileName;
                 
             }       
 
@@ -80,8 +80,8 @@ namespace Ventana
             int tres = 1;
             int tres2 = 1;
             int uno = 1;
-            Auxiliar.Auxiliar.IP = 0;
-            Auxiliar.Auxiliar.IP2 = 1;
+            Auxiliar.Auxi.IP = 0;
+            Auxiliar.Auxi.IP2 = 1;
             long tamaño = fs.Length;
             for (long x = 0; x < tamaño; x++)
             {
@@ -151,46 +151,50 @@ namespace Ventana
 
                     if (BorW == 1)//1=Byte, 0=Word
                     {
-                        TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + ins + borw + toreg + fromreg + Environment.NewLine);
-                        Auxiliar.Auxiliar.IP2++;
+                        TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + ins + borw + toreg + fromreg + Environment.NewLine);
+                        Auxiliar.Auxi.IP2++;
                         if (FromReg == 1)
                         {
-                            TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + whatreg + Environment.NewLine);
-                            Auxiliar.Auxiliar.IP2++;
+                            TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + whatreg + Environment.NewLine);
+                            TXBMAR.Text = ("" + ins + borw + toreg + fromreg + whatreg);
+                            Auxiliar.Auxi.IP2++;
                         }
                         else
                         {
-                            TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + bajo + Environment.NewLine);
-                            Auxiliar.Auxiliar.IP2++;
+                            TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + bajo + Environment.NewLine);
+                            TXBMAR.Text = ("" + ins + borw + toreg + fromreg + bajo);
+                            Auxiliar.Auxi.IP2++;
                         }
 
                     }
                     else
                     {
-                        TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + ins + borw + toreg + fromreg + Environment.NewLine);
-                        Auxiliar.Auxiliar.IP2++;
+                        TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + ins + borw + toreg + fromreg + Environment.NewLine);
+                        Auxiliar.Auxi.IP2++;
                         if (FromReg == 1)
                         {
-                            TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + whatreg + Environment.NewLine);
-                            Auxiliar.Auxiliar.IP2++;
-                            TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + alto + Environment.NewLine);
-                            Auxiliar.Auxiliar.IP2++;
+                            TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + whatreg + Environment.NewLine);
+                            Auxiliar.Auxi.IP2++;
+                            TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + alto + Environment.NewLine);
+                            Auxiliar.Auxi.IP2++;
+                            TXBMAR.Text = ("" + ins + borw + toreg + fromreg + alto);
                         }
                         else
                         {
-                            TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + bajo + Environment.NewLine);
-                            Auxiliar.Auxiliar.IP2++;
-                            TXBMostrar.Text += ("" + Auxiliar.Auxiliar.IP2 + ":" + alto + Environment.NewLine);
-                            Auxiliar.Auxiliar.IP2++;
+                            TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + bajo + Environment.NewLine);
+                            Auxiliar.Auxi.IP2++;
+                            TXBMostrar.Text += ("" + Auxiliar.Auxi.IP2 + ":" + alto + Environment.NewLine);
+                            Auxiliar.Auxi.IP2++;
+                            TXBMAR.Text = ("" + ins + borw + toreg + fromreg + alto);
                         }
                     }
                     //imprime y sustituye txt de ip
-                    TXBIP.Text = ("" + Auxiliar.Auxiliar.IP);
-                    TXBCarry.Text = ("" + Auxiliar.Auxiliar.CY);
-                    TXBAx.Text = ("" + Auxiliar.Auxiliar.AX[1] + Auxiliar.Auxiliar.AX[2] + Auxiliar.Auxiliar.AX[3] + Auxiliar.Auxiliar.AX[4] + Auxiliar.Auxiliar.AX[5] + Auxiliar.Auxiliar.AX[6] + Auxiliar.Auxiliar.AX[7] + Auxiliar.Auxiliar.AX[8]);
-                    TXBBx.Text = ("" + Auxiliar.Auxiliar.BX[1] + Auxiliar.Auxiliar.BX[2] + Auxiliar.Auxiliar.BX[3] + Auxiliar.Auxiliar.BX[4] + Auxiliar.Auxiliar.BX[5] + Auxiliar.Auxiliar.BX[6] + Auxiliar.Auxiliar.BX[7] + Auxiliar.Auxiliar.BX[8]);
-                    TXBCx.Text = ("" + Auxiliar.Auxiliar.CX[1] + Auxiliar.Auxiliar.CX[2] + Auxiliar.Auxiliar.CX[3] + Auxiliar.Auxiliar.CX[4] + Auxiliar.Auxiliar.CX[5] + Auxiliar.Auxiliar.CX[6] + Auxiliar.Auxiliar.CX[7] + Auxiliar.Auxiliar.CX[8]);
-                    TXBDx.Text = ("" + Auxiliar.Auxiliar.DX[1] + Auxiliar.Auxiliar.DX[2] + Auxiliar.Auxiliar.DX[3] + Auxiliar.Auxiliar.DX[4] + Auxiliar.Auxiliar.DX[5] + Auxiliar.Auxiliar.DX[6] + Auxiliar.Auxiliar.DX[7] + Auxiliar.Auxiliar.DX[8]);
+                    TXBIP.Text = ("" + Auxiliar.Auxi.IP);
+                    TXBCarry.Text = ("" + Auxiliar.Auxi.CY);
+                    TXBAx.Text = ("" + Auxi.AX[1] + Auxi.AX[2] + Auxi.AX[3] + Auxi.AX[4] + Auxi.AX[5] + Auxi.AX[6] + Auxi.AX[7] + Auxi.AX[8]);
+                    TXBBx.Text = ("" + Auxi.BX[1] + Auxi.BX[2] + Auxi.BX[3] + Auxi.BX[4] + Auxi.BX[5] + Auxi.BX[6] + Auxi.BX[7] + Auxi.BX[8]);
+                    TXBCx.Text = ("" + Auxi.CX[1] + Auxi.CX[2] + Auxi.CX[3] + Auxi.CX[4] + Auxi.CX[5] + Auxi.CX[6] + Auxi.CX[7] + Auxi.CX[8]);
+                    TXBDx.Text = ("" + Auxi.DX[1] + Auxi.DX[2] + Auxi.DX[3] + Auxi.DX[4] + Auxi.DX[5] + Auxi.DX[6] + Auxi.DX[7] + Auxi.DX[8]);
                     y = 0;
                 }
                 //string cadena = ($"Posición {x+1}: " + valUTF + Instruction[1] + Instruction[2] + Instruction[3] + Instruction[4] + Environment.NewLine);
