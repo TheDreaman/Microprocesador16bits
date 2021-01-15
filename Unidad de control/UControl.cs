@@ -353,6 +353,14 @@ namespace Unidad_de_control
             }
         }
 
-        
+        public void Zero(int wareg1, int wareg2, int wareg3, int wareg4, int wareg5, int wareg6, int wareg7, int wareg8, 
+            int bajo1, int bajo2, int bajo3, int bajo4, int bajo5, int bajo6, int bajo7, int bajo8, 
+            int alto1, int alto2, int alto3, int alto4, int alto5, int alto6, int alto7, int alto8)
+        {
+            /*if ()
+            {
+
+            }*/
+        }
     }
 }
