@@ -61,6 +61,10 @@
             this.LBLIR = new System.Windows.Forms.Label();
             this.TXBPC = new System.Windows.Forms.TextBox();
             this.TXBIR = new System.Windows.Forms.TextBox();
+            this.TXBMostrar2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LBLTxtname = new System.Windows.Forms.Label();
             this.PNLTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTNClose)).BeginInit();
@@ -71,6 +75,7 @@
             // PNLTop
             // 
             this.PNLTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(0)))), ((int)(((byte)(73)))));
+            this.PNLTop.Controls.Add(this.LBLTxtname);
             this.PNLTop.Controls.Add(this.BTNMin);
             this.PNLTop.Controls.Add(this.BTNClose);
             this.PNLTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -110,12 +115,12 @@
             this.TXBMostrar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXBMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXBMostrar.ForeColor = System.Drawing.Color.White;
-            this.TXBMostrar.Location = new System.Drawing.Point(224, 31);
+            this.TXBMostrar.Location = new System.Drawing.Point(224, 63);
             this.TXBMostrar.Multiline = true;
             this.TXBMostrar.Name = "TXBMostrar";
             this.TXBMostrar.ReadOnly = true;
             this.TXBMostrar.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXBMostrar.Size = new System.Drawing.Size(276, 293);
+            this.TXBMostrar.Size = new System.Drawing.Size(131, 261);
             this.TXBMostrar.TabIndex = 1;
             // 
             // BTNCargar
@@ -426,12 +431,61 @@
             this.TXBIR.Size = new System.Drawing.Size(55, 13);
             this.TXBIR.TabIndex = 28;
             // 
+            // TXBMostrar2
+            // 
+            this.TXBMostrar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(0)))), ((int)(((byte)(55)))));
+            this.TXBMostrar2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXBMostrar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXBMostrar2.ForeColor = System.Drawing.Color.White;
+            this.TXBMostrar2.Location = new System.Drawing.Point(361, 63);
+            this.TXBMostrar2.Multiline = true;
+            this.TXBMostrar2.Name = "TXBMostrar2";
+            this.TXBMostrar2.ReadOnly = true;
+            this.TXBMostrar2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TXBMostrar2.Size = new System.Drawing.Size(139, 260);
+            this.TXBMostrar2.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(260, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 15);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Código";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DIN", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(392, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Instrucción";
+            // 
+            // LBLTxtname
+            // 
+            this.LBLTxtname.AutoSize = true;
+            this.LBLTxtname.Font = new System.Drawing.Font("DIN", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLTxtname.ForeColor = System.Drawing.Color.White;
+            this.LBLTxtname.Location = new System.Drawing.Point(12, 6);
+            this.LBLTxtname.Name = "LBLTxtname";
+            this.LBLTxtname.Size = new System.Drawing.Size(0, 14);
+            this.LBLTxtname.TabIndex = 32;
+            // 
             // WinInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(0)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(500, 330);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TXBMostrar2);
             this.Controls.Add(this.TXBIR);
             this.Controls.Add(this.TXBPC);
             this.Controls.Add(this.LBLIR);
@@ -467,6 +521,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.WinInicio_Load);
             this.PNLTop.ResumeLayout(false);
+            this.PNLTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BTNMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BTNClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IMGSiguiente)).EndInit();
@@ -491,7 +546,6 @@
         private System.Windows.Forms.TextBox TXBCx;
         private System.Windows.Forms.TextBox TXBDx;
         private System.Windows.Forms.TextBox TXBIP;
-        private System.Windows.Forms.TextBox TXBZero;
         private System.Windows.Forms.TextBox TXBCarry;
         private System.Windows.Forms.TextBox TXBOnlyFans;
         private System.Windows.Forms.Label LBLAx;
@@ -510,6 +564,11 @@
         private System.Windows.Forms.Label LBLIR;
         private System.Windows.Forms.TextBox TXBPC;
         private System.Windows.Forms.TextBox TXBIR;
+        public System.Windows.Forms.TextBox TXBZero;
+        public System.Windows.Forms.TextBox TXBMostrar2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LBLTxtname;
     }
 }
 

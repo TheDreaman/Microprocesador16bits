@@ -282,14 +282,15 @@ namespace Unidad_de_control
             if (regdest2 == "AX")
             {
                 ALU.Resta(alto1, alto2, alto3, alto4, alto5, alto6, alto7, alto8, bajo1, bajo2, bajo3, bajo4, bajo5, bajo6, bajo7, bajo8);
-                Auxiliar.Auxi.AX[8] = Auxiliar.Auxi.RR0;
-                Auxiliar.Auxi.AX[7] = Auxiliar.Auxi.RR1;
-                Auxiliar.Auxi.AX[6] = Auxiliar.Auxi.RR2;
-                Auxiliar.Auxi.AX[5] = Auxiliar.Auxi.RR3;
-                Auxiliar.Auxi.AX[4] = Auxiliar.Auxi.RR4;
-                Auxiliar.Auxi.AX[3] = Auxiliar.Auxi.RR5;
-                Auxiliar.Auxi.AX[2] = Auxiliar.Auxi.RR6;
-                Auxiliar.Auxi.AX[1] = Auxiliar.Auxi.RR7;
+                Auxi.AX[8] = Auxi.RR0;
+                Auxi.AX[7] = Auxi.RR1;
+                Auxi.AX[6] = Auxi.RR2;
+                Auxi.AX[5] = Auxi.RR3;
+                Auxi.AX[4] = Auxi.RR4;
+                Auxi.AX[3] = Auxi.RR5;
+                Auxi.AX[2] = Auxi.RR6;
+                Auxi.AX[1] = Auxi.RR7;
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -302,6 +303,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.BX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.BX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.BX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -314,6 +316,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.CX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.CX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.CX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -326,6 +329,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.DX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.DX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.DX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -343,6 +347,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.AX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.AX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.AX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
             {
@@ -355,7 +360,8 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.BX[4] = Auxiliar.Auxi.RR4;
                 Auxiliar.Auxi.BX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.BX[2] = Auxiliar.Auxi.RR6;
-                Auxiliar.Auxi.BX[1] = Auxiliar.Auxi.RR7;//AQUI ME QUEDE
+                Auxiliar.Auxi.BX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
@@ -369,6 +375,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.CX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.CX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.CX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
@@ -382,6 +389,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.DX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.DX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.DX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
@@ -395,6 +403,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.AX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.AX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.AX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -408,6 +417,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.BX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.BX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.BX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
@@ -421,6 +431,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.CX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.CX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.CX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
@@ -434,6 +445,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.DX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.DX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.DX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
@@ -447,6 +459,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.AX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.AX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.AX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
@@ -460,6 +473,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.BX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.BX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.BX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -473,6 +487,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.CX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.CX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.CX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
@@ -486,6 +501,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.DX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.DX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.DX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
@@ -499,6 +515,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.AX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.AX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.AX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
@@ -512,6 +529,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.BX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.BX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.BX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
@@ -525,6 +543,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.CX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.CX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.CX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -538,6 +557,7 @@ namespace Unidad_de_control
                 Auxiliar.Auxi.DX[3] = Auxiliar.Auxi.RR5;
                 Auxiliar.Auxi.DX[2] = Auxiliar.Auxi.RR6;
                 Auxiliar.Auxi.DX[1] = Auxiliar.Auxi.RR7;
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -554,6 +574,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.AND(alto3, bajo3);
                 Auxi.AX[2] = ALU.AND(alto2, bajo2);
                 Auxi.AX[1] = ALU.AND(alto1, bajo1);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -565,6 +586,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.AND(alto3, bajo3);
                 Auxi.BX[2] = ALU.AND(alto2, bajo2);
                 Auxi.BX[1] = ALU.AND(alto1, bajo1);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -576,6 +598,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.AND(alto3, bajo3);
                 Auxi.CX[2] = ALU.AND(alto2, bajo2);
                 Auxi.CX[1] = ALU.AND(alto1, bajo1);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -587,6 +610,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.AND(alto3, bajo3);
                 Auxi.DX[2] = ALU.AND(alto2, bajo2);
                 Auxi.DX[1] = ALU.AND(alto1, bajo1);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -602,6 +626,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.AND(Auxi.AX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.AND(Auxi.AX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.AND(Auxi.AX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
             {
@@ -613,6 +638,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.AND(Auxi.AX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.AND(Auxi.AX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.AND(Auxi.AX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
@@ -624,6 +650,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.AND(Auxi.AX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.AND(Auxi.AX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.AND(Auxi.AX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
@@ -635,6 +662,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.AND(Auxi.AX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.AND(Auxi.AX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.AND(Auxi.AX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
@@ -646,6 +674,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.AND(Auxi.BX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.AND(Auxi.BX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.AND(Auxi.BX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -657,6 +686,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.AND(Auxi.BX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.AND(Auxi.BX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.AND(Auxi.BX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
@@ -668,6 +698,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.AND(Auxi.BX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.AND(Auxi.BX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.AND(Auxi.BX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
@@ -679,6 +710,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.AND(Auxi.BX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.AND(Auxi.BX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.AND(Auxi.BX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
@@ -690,6 +722,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.AND(Auxi.CX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.AND(Auxi.CX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.AND(Auxi.CX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
@@ -701,6 +734,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.AND(Auxi.CX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.AND(Auxi.CX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.AND(Auxi.CX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -712,6 +746,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.AND(Auxi.CX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.AND(Auxi.CX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.AND(Auxi.CX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
@@ -723,6 +758,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.AND(Auxi.CX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.AND(Auxi.CX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.AND(Auxi.CX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
@@ -734,6 +770,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.AND(Auxi.DX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.AND(Auxi.DX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.AND(Auxi.DX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
@@ -745,6 +782,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.AND(Auxi.DX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.AND(Auxi.DX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.AND(Auxi.DX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
@@ -756,6 +794,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.AND(Auxi.DX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.AND(Auxi.DX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.AND(Auxi.DX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -767,6 +806,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.AND(Auxi.DX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.AND(Auxi.DX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.AND(Auxi.DX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -783,6 +823,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.OR(alto3, bajo3);
                 Auxi.AX[2] = ALU.OR(alto2, bajo2);
                 Auxi.AX[1] = ALU.OR(alto1, bajo1);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -794,6 +835,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.OR(alto3, bajo3);
                 Auxi.BX[2] = ALU.OR(alto2, bajo2);
                 Auxi.BX[1] = ALU.OR(alto1, bajo1);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -805,6 +847,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.OR(alto3, bajo3);
                 Auxi.CX[2] = ALU.OR(alto2, bajo2);
                 Auxi.CX[1] = ALU.OR(alto1, bajo1);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -816,6 +859,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.OR(alto3, bajo3);
                 Auxi.DX[2] = ALU.OR(alto2, bajo2);
                 Auxi.DX[1] = ALU.OR(alto1, bajo1);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -831,6 +875,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.OR(Auxi.AX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.OR(Auxi.AX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.OR(Auxi.AX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
             {
@@ -842,6 +887,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.OR(Auxi.AX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.OR(Auxi.AX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.OR(Auxi.AX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
@@ -853,6 +899,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.OR(Auxi.AX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.OR(Auxi.AX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.OR(Auxi.AX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
@@ -864,6 +911,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.OR(Auxi.AX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.OR(Auxi.AX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.OR(Auxi.AX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
@@ -875,6 +923,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.OR(Auxi.BX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.OR(Auxi.BX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.OR(Auxi.BX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -886,6 +935,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.OR(Auxi.BX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.OR(Auxi.BX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.OR(Auxi.BX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
@@ -897,6 +947,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.OR(Auxi.BX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.OR(Auxi.BX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.OR(Auxi.BX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
@@ -908,6 +959,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.OR(Auxi.BX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.OR(Auxi.BX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.OR(Auxi.BX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
@@ -919,6 +971,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.OR(Auxi.CX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.OR(Auxi.CX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.OR(Auxi.CX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
@@ -930,6 +983,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.OR(Auxi.CX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.OR(Auxi.CX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.OR(Auxi.CX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -941,6 +995,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.OR(Auxi.CX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.OR(Auxi.CX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.OR(Auxi.CX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
@@ -952,6 +1007,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.OR(Auxi.CX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.OR(Auxi.CX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.OR(Auxi.CX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
@@ -963,6 +1019,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.OR(Auxi.DX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.OR(Auxi.DX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.OR(Auxi.DX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
@@ -974,6 +1031,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.OR(Auxi.DX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.OR(Auxi.DX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.OR(Auxi.DX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
@@ -985,6 +1043,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.OR(Auxi.DX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.OR(Auxi.DX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.OR(Auxi.DX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -996,6 +1055,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.OR(Auxi.DX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.OR(Auxi.DX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.OR(Auxi.DX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1012,6 +1072,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XOR(alto3, bajo3);
                 Auxi.AX[2] = ALU.XOR(alto2, bajo2);
                 Auxi.AX[1] = ALU.XOR(alto1, bajo1);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -1023,6 +1084,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XOR(alto3, bajo3);
                 Auxi.BX[2] = ALU.XOR(alto2, bajo2);
                 Auxi.BX[1] = ALU.XOR(alto1, bajo1);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -1034,6 +1096,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XOR(alto3, bajo3);
                 Auxi.CX[2] = ALU.XOR(alto2, bajo2);
                 Auxi.CX[1] = ALU.XOR(alto1, bajo1);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -1045,6 +1108,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XOR(alto3, bajo3);
                 Auxi.DX[2] = ALU.XOR(alto2, bajo2);
                 Auxi.DX[1] = ALU.XOR(alto1, bajo1);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1060,6 +1124,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XOR(Auxi.AX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XOR(Auxi.AX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XOR(Auxi.AX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
             {
@@ -1071,6 +1136,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XOR(Auxi.AX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XOR(Auxi.AX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XOR(Auxi.AX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
@@ -1082,6 +1148,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XOR(Auxi.AX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XOR(Auxi.AX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XOR(Auxi.AX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
@@ -1093,6 +1160,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XOR(Auxi.AX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XOR(Auxi.AX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XOR(Auxi.AX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
@@ -1104,6 +1172,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XOR(Auxi.BX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XOR(Auxi.BX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XOR(Auxi.BX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -1115,6 +1184,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XOR(Auxi.BX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XOR(Auxi.BX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XOR(Auxi.BX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
@@ -1126,6 +1196,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XOR(Auxi.BX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XOR(Auxi.BX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XOR(Auxi.BX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
@@ -1137,6 +1208,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XOR(Auxi.BX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XOR(Auxi.BX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XOR(Auxi.BX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
@@ -1148,6 +1220,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XOR(Auxi.CX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XOR(Auxi.CX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XOR(Auxi.CX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
@@ -1159,6 +1232,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XOR(Auxi.CX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XOR(Auxi.CX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XOR(Auxi.CX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -1170,6 +1244,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XOR(Auxi.CX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XOR(Auxi.CX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XOR(Auxi.CX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
@@ -1181,6 +1256,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XOR(Auxi.CX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XOR(Auxi.CX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XOR(Auxi.CX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
@@ -1192,6 +1268,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XOR(Auxi.DX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XOR(Auxi.DX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XOR(Auxi.DX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
@@ -1203,6 +1280,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XOR(Auxi.DX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XOR(Auxi.DX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XOR(Auxi.DX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
@@ -1214,6 +1292,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XOR(Auxi.DX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XOR(Auxi.DX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XOR(Auxi.DX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -1225,6 +1304,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XOR(Auxi.DX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XOR(Auxi.DX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XOR(Auxi.DX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1241,6 +1321,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XNOR(alto3, bajo3);
                 Auxi.AX[2] = ALU.XNOR(alto2, bajo2);
                 Auxi.AX[1] = ALU.XNOR(alto1, bajo1);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -1252,6 +1333,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XNOR(alto3, bajo3);
                 Auxi.BX[2] = ALU.XNOR(alto2, bajo2);
                 Auxi.BX[1] = ALU.XNOR(alto1, bajo1);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -1263,6 +1345,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XNOR(alto3, bajo3);
                 Auxi.CX[2] = ALU.XNOR(alto2, bajo2);
                 Auxi.CX[1] = ALU.XNOR(alto1, bajo1);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -1274,6 +1357,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XNOR(alto3, bajo3);
                 Auxi.DX[2] = ALU.XNOR(alto2, bajo2);
                 Auxi.DX[1] = ALU.XNOR(alto1, bajo1);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1289,6 +1373,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XNOR(Auxi.AX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XNOR(Auxi.AX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XNOR(Auxi.AX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
             {
@@ -1300,6 +1385,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XNOR(Auxi.AX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XNOR(Auxi.AX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XNOR(Auxi.AX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
@@ -1311,6 +1397,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XNOR(Auxi.AX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XNOR(Auxi.AX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XNOR(Auxi.AX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
@@ -1322,6 +1409,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XNOR(Auxi.AX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XNOR(Auxi.AX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XNOR(Auxi.AX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
@@ -1333,6 +1421,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XNOR(Auxi.BX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XNOR(Auxi.BX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XNOR(Auxi.BX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -1344,6 +1433,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XNOR(Auxi.BX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XNOR(Auxi.BX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XNOR(Auxi.BX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
@@ -1355,6 +1445,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XNOR(Auxi.BX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XNOR(Auxi.BX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XNOR(Auxi.BX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
@@ -1366,6 +1457,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XNOR(Auxi.BX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XNOR(Auxi.BX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XNOR(Auxi.BX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
@@ -1377,6 +1469,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XNOR(Auxi.CX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XNOR(Auxi.CX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XNOR(Auxi.CX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
@@ -1388,6 +1481,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XNOR(Auxi.CX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XNOR(Auxi.CX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XNOR(Auxi.CX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -1399,6 +1493,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XNOR(Auxi.CX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XNOR(Auxi.CX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XNOR(Auxi.CX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
@@ -1410,6 +1505,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XNOR(Auxi.CX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XNOR(Auxi.CX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XNOR(Auxi.CX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
@@ -1421,6 +1517,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.XNOR(Auxi.DX[3], Auxi.AX[3]);
                 Auxi.AX[2] = ALU.XNOR(Auxi.DX[2], Auxi.AX[2]);
                 Auxi.AX[1] = ALU.XNOR(Auxi.DX[1], Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
@@ -1432,6 +1529,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.XNOR(Auxi.DX[3], Auxi.BX[3]);
                 Auxi.BX[2] = ALU.XNOR(Auxi.DX[2], Auxi.BX[2]);
                 Auxi.BX[1] = ALU.XNOR(Auxi.DX[1], Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
@@ -1443,6 +1541,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.XNOR(Auxi.DX[3], Auxi.CX[3]);
                 Auxi.CX[2] = ALU.XNOR(Auxi.DX[2], Auxi.CX[2]);
                 Auxi.CX[1] = ALU.XNOR(Auxi.DX[1], Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -1454,6 +1553,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.XNOR(Auxi.DX[3], Auxi.DX[3]);
                 Auxi.DX[2] = ALU.XNOR(Auxi.DX[2], Auxi.DX[2]);
                 Auxi.DX[1] = ALU.XNOR(Auxi.DX[1], Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1470,6 +1570,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.NOT(bajo3);
                 Auxi.AX[2] = ALU.NOT(bajo2);
                 Auxi.AX[1] = ALU.NOT(bajo1);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -1481,6 +1582,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.NOT(bajo3);
                 Auxi.BX[2] = ALU.NOT(bajo2);
                 Auxi.BX[1] = ALU.NOT(bajo1);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -1492,6 +1594,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.NOT(bajo3);
                 Auxi.CX[2] = ALU.NOT(bajo2);
                 Auxi.CX[1] = ALU.NOT(bajo1);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -1503,6 +1606,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.NOT(bajo3);
                 Auxi.DX[2] = ALU.NOT(bajo2);
                 Auxi.DX[1] = ALU.NOT(bajo1);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1518,6 +1622,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.NOT(Auxi.AX[3]);
                 Auxi.AX[2] = ALU.NOT(Auxi.AX[2]);
                 Auxi.AX[1] = ALU.NOT(Auxi.AX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
             {
@@ -1529,6 +1634,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.NOT(Auxi.AX[3]);
                 Auxi.BX[2] = ALU.NOT(Auxi.AX[2]);
                 Auxi.BX[1] = ALU.NOT(Auxi.AX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("CX")))
             {
@@ -1540,6 +1646,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.NOT(Auxi.AX[3]);
                 Auxi.CX[2] = ALU.NOT(Auxi.AX[2]);
                 Auxi.CX[1] = ALU.NOT(Auxi.AX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("DX")))
             {
@@ -1551,6 +1658,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.NOT(Auxi.AX[3]);
                 Auxi.DX[2] = ALU.NOT(Auxi.AX[2]);
                 Auxi.DX[1] = ALU.NOT(Auxi.AX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
@@ -1562,6 +1670,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.NOT(Auxi.BX[3]);
                 Auxi.AX[2] = ALU.NOT(Auxi.BX[2]);
                 Auxi.AX[1] = ALU.NOT(Auxi.BX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -1573,6 +1682,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.NOT(Auxi.BX[3]);
                 Auxi.BX[2] = ALU.NOT(Auxi.BX[2]);
                 Auxi.BX[1] = ALU.NOT(Auxi.BX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
             {
@@ -1584,6 +1694,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.NOT(Auxi.BX[3]);
                 Auxi.CX[2] = ALU.NOT(Auxi.BX[2]);
                 Auxi.CX[1] = ALU.NOT(Auxi.BX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("DX")))
             {
@@ -1595,6 +1706,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.NOT(Auxi.BX[3]);
                 Auxi.DX[2] = ALU.NOT(Auxi.BX[2]);
                 Auxi.DX[1] = ALU.NOT(Auxi.BX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("AX")))
             {
@@ -1606,6 +1718,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.NOT(Auxi.CX[3]);
                 Auxi.AX[2] = ALU.NOT(Auxi.CX[2]);
                 Auxi.AX[1] = ALU.NOT(Auxi.CX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
@@ -1617,6 +1730,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.NOT(Auxi.CX[3]);
                 Auxi.BX[2] = ALU.NOT(Auxi.CX[2]);
                 Auxi.BX[1] = ALU.NOT(Auxi.CX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -1628,6 +1742,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.NOT(Auxi.CX[3]);
                 Auxi.CX[2] = ALU.NOT(Auxi.CX[2]);
                 Auxi.CX[1] = ALU.NOT(Auxi.CX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
             {
@@ -1639,6 +1754,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.NOT(Auxi.CX[3]);
                 Auxi.DX[2] = ALU.NOT(Auxi.CX[2]);
                 Auxi.DX[1] = ALU.NOT(Auxi.CX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("AX")))
             {
@@ -1650,6 +1766,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = ALU.NOT(Auxi.DX[3]);
                 Auxi.AX[2] = ALU.NOT(Auxi.DX[2]);
                 Auxi.AX[1] = ALU.NOT(Auxi.DX[1]);
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("BX")))
             {
@@ -1661,6 +1778,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = ALU.NOT(Auxi.DX[3]);
                 Auxi.BX[2] = ALU.NOT(Auxi.DX[2]);
                 Auxi.BX[1] = ALU.NOT(Auxi.DX[1]);
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
@@ -1672,6 +1790,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = ALU.NOT(Auxi.DX[3]);
                 Auxi.CX[2] = ALU.NOT(Auxi.DX[2]);
                 Auxi.CX[1] = ALU.NOT(Auxi.DX[1]);
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -1683,6 +1802,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = ALU.NOT(Auxi.DX[3]);
                 Auxi.DX[2] = ALU.NOT(Auxi.DX[2]);
                 Auxi.DX[1] = ALU.NOT(Auxi.DX[1]);
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1698,6 +1818,7 @@ namespace Unidad_de_control
                 Auxi.AX[3] = bajo3;
                 Auxi.AX[2] = bajo2;
                 Auxi.AX[1] = bajo1;
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if (regdest2 == "BX")
             {
@@ -1709,6 +1830,7 @@ namespace Unidad_de_control
                 Auxi.BX[3] = bajo3;
                 Auxi.BX[2] = bajo2;
                 Auxi.BX[1] = bajo1;
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if (regdest2 == "CX")
             {
@@ -1720,6 +1842,7 @@ namespace Unidad_de_control
                 Auxi.CX[3] = bajo3;
                 Auxi.CX[2] = bajo2;
                 Auxi.CX[1] = bajo1;
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if (regdest2 == "DX")
             {
@@ -1731,6 +1854,7 @@ namespace Unidad_de_control
                 Auxi.DX[3] = bajo3;
                 Auxi.DX[2] = bajo2;
                 Auxi.DX[1] = bajo1;
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
         }
 
@@ -1746,41 +1870,9 @@ namespace Unidad_de_control
                 Auxi.AX[3] = Auxi.AX[3];
                 Auxi.AX[2] = Auxi.AX[2];
                 Auxi.AX[1] = Auxi.AX[1];
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
             }
             else if ((Rega == ("AX")) && (Regb == ("BX")))
-            {
-                Auxi.AX[8] = Auxi.BX[8];
-                Auxi.AX[7] = Auxi.BX[7];
-                Auxi.AX[6] = Auxi.BX[6];
-                Auxi.AX[5] = Auxi.BX[5];
-                Auxi.AX[4] = Auxi.BX[4];
-                Auxi.AX[3] = Auxi.BX[3];
-                Auxi.AX[2] = Auxi.BX[2];
-                Auxi.AX[1] = Auxi.BX[1];
-            }
-            else if ((Rega == ("AX")) && (Regb == ("CX")))
-            {
-                Auxi.AX[8] = Auxi.CX[8];
-                Auxi.AX[7] = Auxi.CX[7];
-                Auxi.AX[6] = Auxi.CX[6];
-                Auxi.AX[5] = Auxi.CX[5];
-                Auxi.AX[4] = Auxi.CX[4];
-                Auxi.AX[3] = Auxi.CX[3];
-                Auxi.AX[2] = Auxi.CX[2];
-                Auxi.AX[1] = Auxi.CX[1];
-            }
-            else if ((Rega == ("AX")) && (Regb == ("DX")))
-            {
-                Auxi.AX[8] = Auxi.DX[8];
-                Auxi.AX[7] = Auxi.DX[7];
-                Auxi.AX[6] = Auxi.DX[6];
-                Auxi.AX[5] = Auxi.DX[5];
-                Auxi.AX[4] = Auxi.DX[4];
-                Auxi.AX[3] = Auxi.DX[3];
-                Auxi.AX[2] = Auxi.DX[2];
-                Auxi.AX[1] = Auxi.DX[1];
-            }
-            else if ((Rega == ("BX")) && (Regb == ("AX")))
             {
                 Auxi.BX[8] = Auxi.AX[8];
                 Auxi.BX[7] = Auxi.AX[7];
@@ -1790,6 +1882,43 @@ namespace Unidad_de_control
                 Auxi.BX[3] = Auxi.AX[3];
                 Auxi.BX[2] = Auxi.AX[2];
                 Auxi.BX[1] = Auxi.AX[1];
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
+            }
+            else if ((Rega == ("AX")) && (Regb == ("CX")))
+            {
+                Auxi.CX[8] = Auxi.AX[8];
+                Auxi.CX[7] = Auxi.AX[7];
+                Auxi.CX[6] = Auxi.AX[6];
+                Auxi.CX[5] = Auxi.AX[5];
+                Auxi.CX[4] = Auxi.AX[4];
+                Auxi.CX[3] = Auxi.AX[3];
+                Auxi.CX[2] = Auxi.AX[2];
+                Auxi.CX[1] = Auxi.AX[1];
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
+            }
+            else if ((Rega == ("AX")) && (Regb == ("DX")))
+            {
+                Auxi.DX[8] = Auxi.AX[8];
+                Auxi.DX[7] = Auxi.AX[7];
+                Auxi.DX[6] = Auxi.AX[6];
+                Auxi.DX[5] = Auxi.AX[5];
+                Auxi.DX[4] = Auxi.AX[4];
+                Auxi.DX[3] = Auxi.AX[3];
+                Auxi.DX[2] = Auxi.AX[2];
+                Auxi.DX[1] = Auxi.AX[1];
+                Zero(Auxi.AX[1], Auxi.AX[2], Auxi.AX[3], Auxi.AX[4], Auxi.AX[5], Auxi.AX[6], Auxi.AX[7], Auxi.AX[8]);
+            }
+            else if ((Rega == ("BX")) && (Regb == ("AX")))
+            {
+                Auxi.AX[8] = Auxi.BX[8];
+                Auxi.AX[7] = Auxi.BX[7];
+                Auxi.AX[6] = Auxi.BX[6];
+                Auxi.AX[5] = Auxi.BX[5];
+                Auxi.AX[4] = Auxi.BX[4];
+                Auxi.AX[3] = Auxi.BX[3];
+                Auxi.AX[2] = Auxi.BX[2];
+                Auxi.AX[1] = Auxi.BX[1];
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("BX")))
             {
@@ -1801,41 +1930,9 @@ namespace Unidad_de_control
                 Auxi.BX[3] = Auxi.BX[3];
                 Auxi.BX[2] = Auxi.BX[2];
                 Auxi.BX[1] = Auxi.BX[1];
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
             }
             else if ((Rega == ("BX")) && (Regb == ("CX")))
-            {
-                Auxi.BX[8] = Auxi.CX[8];
-                Auxi.BX[7] = Auxi.CX[7];
-                Auxi.BX[6] = Auxi.CX[6];
-                Auxi.BX[5] = Auxi.CX[5];
-                Auxi.BX[4] = Auxi.CX[4];
-                Auxi.BX[3] = Auxi.CX[3];
-                Auxi.BX[2] = Auxi.CX[2];
-                Auxi.BX[1] = Auxi.CX[1];
-            }
-            else if ((Rega == ("BX")) && (Regb == ("DX")))
-            {
-                Auxi.BX[8] = Auxi.DX[8];
-                Auxi.BX[7] = Auxi.DX[7];
-                Auxi.BX[6] = Auxi.DX[6];
-                Auxi.BX[5] = Auxi.DX[5];
-                Auxi.BX[4] = Auxi.DX[4];
-                Auxi.BX[3] = Auxi.DX[3];
-                Auxi.BX[2] = Auxi.DX[2];
-                Auxi.BX[1] = Auxi.DX[1];
-            }
-            else if ((Rega == ("CX")) && (Regb == ("AX")))
-            {
-                Auxi.CX[8] = Auxi.AX[8];
-                Auxi.CX[7] = Auxi.AX[7];
-                Auxi.CX[6] = Auxi.AX[6];
-                Auxi.CX[5] = Auxi.AX[5];
-                Auxi.CX[4] = Auxi.AX[4];
-                Auxi.CX[3] = Auxi.AX[3];
-                Auxi.CX[2] = Auxi.AX[2];
-                Auxi.CX[1] = Auxi.AX[1];
-            }
-            else if ((Rega == ("CX")) && (Regb == ("BX")))
             {
                 Auxi.CX[8] = Auxi.BX[8];
                 Auxi.CX[7] = Auxi.BX[7];
@@ -1845,6 +1942,43 @@ namespace Unidad_de_control
                 Auxi.CX[3] = Auxi.BX[3];
                 Auxi.CX[2] = Auxi.BX[2];
                 Auxi.CX[1] = Auxi.BX[1];
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
+            }
+            else if ((Rega == ("BX")) && (Regb == ("DX")))
+            {
+                Auxi.DX[8] = Auxi.BX[8];
+                Auxi.DX[7] = Auxi.BX[7];
+                Auxi.DX[6] = Auxi.BX[6];
+                Auxi.DX[5] = Auxi.BX[5];
+                Auxi.DX[4] = Auxi.BX[4];
+                Auxi.DX[3] = Auxi.BX[3];
+                Auxi.DX[2] = Auxi.BX[2];
+                Auxi.DX[1] = Auxi.BX[1];
+                Zero(Auxi.BX[1], Auxi.BX[2], Auxi.BX[3], Auxi.BX[4], Auxi.BX[5], Auxi.BX[6], Auxi.BX[7], Auxi.BX[8]);
+            }
+            else if ((Rega == ("CX")) && (Regb == ("AX")))
+            {
+                Auxi.AX[8] = Auxi.CX[8];
+                Auxi.AX[7] = Auxi.CX[7];
+                Auxi.AX[6] = Auxi.CX[6];
+                Auxi.AX[5] = Auxi.CX[5];
+                Auxi.AX[4] = Auxi.CX[4];
+                Auxi.AX[3] = Auxi.CX[3];
+                Auxi.AX[2] = Auxi.CX[2];
+                Auxi.AX[1] = Auxi.CX[1];
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
+            }
+            else if ((Rega == ("CX")) && (Regb == ("BX")))
+            {
+                Auxi.BX[8] = Auxi.CX[8];
+                Auxi.BX[7] = Auxi.CX[7];
+                Auxi.BX[6] = Auxi.CX[6];
+                Auxi.BX[5] = Auxi.CX[5];
+                Auxi.BX[4] = Auxi.CX[4];
+                Auxi.BX[3] = Auxi.CX[3];
+                Auxi.BX[2] = Auxi.CX[2];
+                Auxi.BX[1] = Auxi.CX[1];
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("CX")))
             {
@@ -1856,41 +1990,9 @@ namespace Unidad_de_control
                 Auxi.CX[3] = Auxi.CX[3];
                 Auxi.CX[2] = Auxi.CX[2];
                 Auxi.CX[1] = Auxi.CX[1];
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
             }
             else if ((Rega == ("CX")) && (Regb == ("DX")))
-            {
-                Auxi.CX[8] = Auxi.DX[8];
-                Auxi.CX[7] = Auxi.DX[7];
-                Auxi.CX[6] = Auxi.DX[6];
-                Auxi.CX[5] = Auxi.DX[5];
-                Auxi.CX[4] = Auxi.DX[4];
-                Auxi.CX[3] = Auxi.DX[3];
-                Auxi.CX[2] = Auxi.DX[2];
-                Auxi.CX[1] = Auxi.DX[1];
-            }
-            else if ((Rega == ("DX")) && (Regb == ("AX")))
-            {
-                Auxi.DX[8] = Auxi.AX[8];
-                Auxi.DX[7] = Auxi.AX[7];
-                Auxi.DX[6] = Auxi.AX[6];
-                Auxi.DX[5] = Auxi.AX[5];
-                Auxi.DX[4] = Auxi.AX[4];
-                Auxi.DX[3] = Auxi.AX[3];
-                Auxi.DX[2] = Auxi.AX[2];
-                Auxi.DX[1] = Auxi.AX[1];
-            }
-            else if ((Rega == ("DX")) && (Regb == ("BX")))
-            {
-                Auxi.DX[8] = Auxi.BX[8];
-                Auxi.DX[7] = Auxi.BX[7];
-                Auxi.DX[6] = Auxi.BX[6];
-                Auxi.DX[5] = Auxi.BX[5];
-                Auxi.DX[4] = Auxi.BX[4];
-                Auxi.DX[3] = Auxi.BX[3];
-                Auxi.DX[2] = Auxi.BX[2];
-                Auxi.DX[1] = Auxi.BX[1];
-            }
-            else if ((Rega == ("DX")) && (Regb == ("CX")))
             {
                 Auxi.DX[8] = Auxi.CX[8];
                 Auxi.DX[7] = Auxi.CX[7];
@@ -1900,6 +2002,43 @@ namespace Unidad_de_control
                 Auxi.DX[3] = Auxi.CX[3];
                 Auxi.DX[2] = Auxi.CX[2];
                 Auxi.DX[1] = Auxi.CX[1];
+                Zero(Auxi.CX[1], Auxi.CX[2], Auxi.CX[3], Auxi.CX[4], Auxi.CX[5], Auxi.CX[6], Auxi.CX[7], Auxi.CX[8]);
+            }
+            else if ((Rega == ("DX")) && (Regb == ("AX")))
+            {
+                Auxi.AX[8] = Auxi.DX[8];
+                Auxi.AX[7] = Auxi.DX[7];
+                Auxi.AX[6] = Auxi.DX[6];
+                Auxi.AX[5] = Auxi.DX[5];
+                Auxi.AX[4] = Auxi.DX[4];
+                Auxi.AX[3] = Auxi.DX[3];
+                Auxi.AX[2] = Auxi.DX[2];
+                Auxi.AX[1] = Auxi.DX[1];
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
+            }
+            else if ((Rega == ("DX")) && (Regb == ("BX")))
+            {
+                Auxi.BX[8] = Auxi.DX[8];
+                Auxi.BX[7] = Auxi.DX[7];
+                Auxi.BX[6] = Auxi.DX[6];
+                Auxi.BX[5] = Auxi.DX[5];
+                Auxi.BX[4] = Auxi.DX[4];
+                Auxi.BX[3] = Auxi.DX[3];
+                Auxi.BX[2] = Auxi.DX[2];
+                Auxi.BX[1] = Auxi.DX[1];
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
+            }
+            else if ((Rega == ("DX")) && (Regb == ("CX")))
+            {
+                Auxi.CX[8] = Auxi.DX[8];
+                Auxi.CX[7] = Auxi.DX[7];
+                Auxi.CX[6] = Auxi.DX[6];
+                Auxi.CX[5] = Auxi.DX[5];
+                Auxi.CX[4] = Auxi.DX[4];
+                Auxi.CX[3] = Auxi.DX[3];
+                Auxi.CX[2] = Auxi.DX[2];
+                Auxi.CX[1] = Auxi.DX[1];
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
             }
             else if ((Rega == ("DX")) && (Regb == ("DX")))
             {
@@ -1911,6 +2050,27 @@ namespace Unidad_de_control
                 Auxi.DX[3] = Auxi.DX[3];
                 Auxi.DX[2] = Auxi.DX[2];
                 Auxi.DX[1] = Auxi.DX[1];
+                Zero(Auxi.DX[1], Auxi.DX[2], Auxi.DX[3], Auxi.DX[4], Auxi.DX[5], Auxi.DX[6], Auxi.DX[7], Auxi.DX[8]);
+            }
+        }
+
+        public void Zero(int Reg1, int Reg2, int Reg3, int Reg4, int Reg5, int Reg6, int Reg7, int Reg8) //Revisa si el resultado es cero y/o sobreflujo
+        {
+            if (Reg1 == 0 && Reg2 == 0 && Reg3 == 0 && Reg4 == 0 && Reg5 == 0 && Reg6 == 0 && Reg7 == 0 && Reg8 == 0)
+            {
+                Auxi.Z = 1;
+            }
+            else
+            {
+                Auxi.Z = 0;
+                if (Auxi.CY == 1)
+                {
+                    Auxi.OF = 1;
+                }
+                else
+                {
+                    Auxi.OF = 0;
+                }
             }
         }
     }

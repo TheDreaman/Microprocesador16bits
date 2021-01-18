@@ -47,7 +47,7 @@ namespace Auxiliar
         public static int[] BX = new int[9];
         public static int[] CX = new int[9];
         public static int[] DX = new int[9];
-        //IP
+        //IPs
         public static int IP { get; set; }
         public static int IP2 { get; set; }
         //Banderas
@@ -61,15 +61,5 @@ namespace Auxiliar
         public static int T1 { get; set; }
         //URL del txt
         public static string URLtxt { get; set; }
-        //partes del registro
-        public static int B1 { get; set; }
-        public static int B2 { get; set; }
-        public static int B3 { get; set; }
-        public static int B4 { get; set; }
-        public static int A1 { get; set; }
-        public static int A2 { get; set; }
-        public static int A3 { get; set; }
-        public static int A4 { get; set; }
-
     }
 }

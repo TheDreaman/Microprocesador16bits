@@ -25,8 +25,8 @@ namespace Unidad_de_control
                     //Suma
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.SumaRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -41,8 +41,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.SumaRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -61,8 +61,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.RestaRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -77,8 +77,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.RestaRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -97,8 +97,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.ANDRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -113,8 +113,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.ANDRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -133,8 +133,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.ORRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -149,8 +149,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.ORRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -169,8 +169,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.XORRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -185,8 +185,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.XORRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -205,8 +205,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.XNORRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -221,8 +221,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.XNORRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -241,8 +241,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1) //Viene de Reg=1, No viene de Reg=0
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.NOTRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                     }
@@ -257,8 +257,8 @@ namespace Unidad_de_control
                 {
                     if (Fromreg == 1)
                     {
-                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                        string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                        string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                        string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                         F.NOTRegistro(RegOrigen, RegDestino);
                         Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                     }
@@ -282,15 +282,15 @@ namespace Unidad_de_control
                 //MOVxR (direccionamiento por registro)
                 if (BorW == 1)
                 {
-                    string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                    string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                    string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                    string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                     F.MOVxR(RegOrigen, RegDestino);
                     Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 2;
                 }
                 else
                 {
-                    string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); //pedir datos de ax
-                    string RegDestino = QueRegistro2(RegDes1, RegDes2); //guardarlos en bx
+                    string RegOrigen = QueRegistro4(WaReg5, WaReg6, WaReg7, WaReg8); 
+                    string RegDestino = QueRegistro2(RegDes1, RegDes2); 
                     F.MOVxR(RegOrigen, RegDestino);
                     Auxiliar.Auxi.IP = Auxiliar.Auxi.IP + 3;
                 }
@@ -353,14 +353,6 @@ namespace Unidad_de_control
             }
         }
 
-        public void Zero(int wareg1, int wareg2, int wareg3, int wareg4, int wareg5, int wareg6, int wareg7, int wareg8, 
-            int bajo1, int bajo2, int bajo3, int bajo4, int bajo5, int bajo6, int bajo7, int bajo8, 
-            int alto1, int alto2, int alto3, int alto4, int alto5, int alto6, int alto7, int alto8)
-        {
-            /*if ()
-            {
-
-            }*/
-        }
+        
     }
 }
