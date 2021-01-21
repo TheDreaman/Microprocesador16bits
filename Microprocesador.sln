@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALU", "ALU\ALU.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidad de control", "Unidad de control\Unidad de control.csproj", "{ADF38A7D-9B11-452F-AE70-9EA317CD1F4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banderas", "Banderas\Banderas.csproj", "{A8EA97B3-FE47-4687-AD85-7982A897B722}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registros", "Registros\Registros.csproj", "{AD9F8316-F446-4558-AD92-84C252490793}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auxiliar", "Auxiliar\Auxiliar.csproj", "{C4558728-B040-408E-9CAE-D08A5F235E7E}"
 EndProject
 Global
@@ -33,14 +29,6 @@ Global
 		{ADF38A7D-9B11-452F-AE70-9EA317CD1F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADF38A7D-9B11-452F-AE70-9EA317CD1F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADF38A7D-9B11-452F-AE70-9EA317CD1F4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8EA97B3-FE47-4687-AD85-7982A897B722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8EA97B3-FE47-4687-AD85-7982A897B722}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8EA97B3-FE47-4687-AD85-7982A897B722}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8EA97B3-FE47-4687-AD85-7982A897B722}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD9F8316-F446-4558-AD92-84C252490793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD9F8316-F446-4558-AD92-84C252490793}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD9F8316-F446-4558-AD92-84C252490793}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD9F8316-F446-4558-AD92-84C252490793}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C4558728-B040-408E-9CAE-D08A5F235E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C4558728-B040-408E-9CAE-D08A5F235E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4558728-B040-408E-9CAE-D08A5F235E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
