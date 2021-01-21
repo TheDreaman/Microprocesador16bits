@@ -146,6 +146,7 @@ namespace Ventana
                         tres55 = 1;
                         tres66 = 1;
                         uno55 = 1;
+                        Auxi.MAR++;
                     }
                     y55++;
                     x55++;
@@ -238,6 +239,7 @@ namespace Ventana
                     TXBZero.Text = ("" + Auxi.Z);
                     TXBOnlyFans.Text = ("" + Auxi.OF);
                     TXBCarry.Text = ("" + Auxiliar.Auxi.CY);
+                    TXBMAR.Text = ("" + Auxi.MAR);
                     TXBAx.Text = ("" + Auxi.AX[1] + Auxi.AX[2] + Auxi.AX[3] + Auxi.AX[4] + Auxi.AX[5] + Auxi.AX[6] + Auxi.AX[7] + Auxi.AX[8]);
                     TXBBx.Text = ("" + Auxi.BX[1] + Auxi.BX[2] + Auxi.BX[3] + Auxi.BX[4] + Auxi.BX[5] + Auxi.BX[6] + Auxi.BX[7] + Auxi.BX[8]);
                     TXBCx.Text = ("" + Auxi.CX[1] + Auxi.CX[2] + Auxi.CX[3] + Auxi.CX[4] + Auxi.CX[5] + Auxi.CX[6] + Auxi.CX[7] + Auxi.CX[8]);
@@ -314,6 +316,7 @@ namespace Ventana
                         tres = 1;
                         tres2 = 1;
                         uno = 1;
+                        Auxi.MAR++;
                     }
                     else if (y == 26)
                     {
@@ -396,6 +399,7 @@ namespace Ventana
                         TXBZero.Text = ("" + Auxi.Z);
                         TXBOnlyFans.Text = ("" + Auxi.OF);
                         TXBCarry.Text = ("" + Auxiliar.Auxi.CY);
+                        TXBMAR.Text = ("" + Auxi.MAR);
                         TXBAx.Text = ("" + Auxi.AX[1] + Auxi.AX[2] + Auxi.AX[3] + Auxi.AX[4] + Auxi.AX[5] + Auxi.AX[6] + Auxi.AX[7] + Auxi.AX[8]);
                         TXBBx.Text = ("" + Auxi.BX[1] + Auxi.BX[2] + Auxi.BX[3] + Auxi.BX[4] + Auxi.BX[5] + Auxi.BX[6] + Auxi.BX[7] + Auxi.BX[8]);
                         TXBCx.Text = ("" + Auxi.CX[1] + Auxi.CX[2] + Auxi.CX[3] + Auxi.CX[4] + Auxi.CX[5] + Auxi.CX[6] + Auxi.CX[7] + Auxi.CX[8]);
@@ -444,7 +448,7 @@ namespace Ventana
             Auxi.Z = 0;
             Auxi.CY = 0;
             Auxi.OF = 0;
-
+            Auxi.MAR = 0;
         }
 
         private void Traduce(int ins1, int ins2, int ins3, int ins4, int BorW, int RegDes1, int RegDes2, int Fromreg,

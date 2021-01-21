@@ -50,6 +50,7 @@ namespace Auxiliar
         //IPs
         public static int IP { get; set; }
         public static int IP2 { get; set; }
+        public static int MAR { get; set; }
         //Banderas
         public static int Z { get; set; }
         public static int OF { get; set; }
